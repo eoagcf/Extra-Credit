@@ -1,0 +1,16 @@
+UML Class Diagram
+
+
+
+	Elevator
+
+
+eval(expression: string): int
+
+
+infixToPostfix(expr: string):
+  string                       
+- evaluatePostfix(postfix: string): int
+- isOperator(char): bool       |
+- precedence: map<char, int>   |
+- rightAssociative: map<char, bool> 
