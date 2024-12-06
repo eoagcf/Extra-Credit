@@ -1,0 +1,30 @@
+Report
+
+Attributes and Methods
+The Evaluator class has two main attributes:
+
+precedence: This attribute defines the priority of each operator. For example, multiplication and division have a higher precedence than addition and subtraction.
+rightAssociative: This tracks which operators, like exponentiation (^), are evaluated from right to left.
+
+The class also includes the following methods:
+
+eval: This is the main function used to parse and evaluate infix expressions.
+infixToPostfix: This function converts an infix expression into postfix notation, making it easier to evaluate.
+evaluatePostfix: This method processes a postfix expression and calculates the final result.
+isOperator: A helper function that checks if a given character is a valid operator.
+
+Efficiency of Algorithms
+infixToPostfix
+
+Big-O Complexity: O(n)O(n)O(n), where n is the length of the input expression.
+Explanation: The algorithm processes each character of the expression once. Operators are pushed to or popped from a stack based on their precedence.
+evaluatePostfix
+
+Big-O Complexity: O(n)O(n)O(n), where n is the length of the postfix expression.
+Explanation: Each token in the postfix expression is processed exactly once. Operands are pushed onto a stack, and operators pop values from the stack for evaluation.
+
+Combined Evaluation
+Big-O Complexity: O(n)O(n)O(n).
+Explanation: The combined process of converting the infix expression to postfix and evaluating the postfix expression is linear in complexity because each step processes the input once.
+
+
