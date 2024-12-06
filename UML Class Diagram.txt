@@ -14,3 +14,5 @@ infixToPostfix(expr: string):
 - isOperator(char): bool       
 - precedence: map<char, int>   
 - rightAssociative: map<char, bool> 
+
+Report Link: https://docs.google.com/document/d/1okkQjlTlSbw2jwSvtzyS-EDMnijdjn9KgGU91sSXAig/edit?tab=t.0#heading=h.i5xyoulbzwuc 
